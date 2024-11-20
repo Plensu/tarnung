@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Tarnung"
+version = "1.0.0"
+authors = [
+    { name="Plensu", email="plensu@plensu.me" },
+]
+description = "A simple python script to camouflage your (probably malicious) domains as another domain."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "flask",
+    "requests",
+    "beautifulsoup4",
+    "pyyaml",
+]
+[project.urls]
+Homepage = "https://github.com/Plensu/tarnung"
+Issues = "https://github.com/Plensu/tarnung/issues"
+
+[tool.setuptools.packages]
+find = {}
